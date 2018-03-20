@@ -1,5 +1,4 @@
 .DS_Store
 .idea/
 audit.log
-practicejavaee8.iml
-target/
+**/*.iml
