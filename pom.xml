@@ -9,12 +9,12 @@
     <modules>
         <module>servlet</module>
         <module>rest</module>
+        <module>ear</module>
     </modules>
     <packaging>pom</packaging>
 
 
   <build>
-    <finalName>demo</finalName>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
