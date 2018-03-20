@@ -20,7 +20,7 @@ import java.io.IOException;
  * <a href="http://localhost:8080/cookies">http://localhost:8080/cookies</a>
  * <p>This demonstration prints something to the logs so don't stare too much at the browser.</p>
  */
-@WebFilter("/*")
+//@WebFilter("/*")
 public class LoggingFilterForServlets implements Filter {
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
