@@ -17,3 +17,24 @@ As the server runs in the background, this is what you need to run in order to r
 You can then access your shit from:
 
     http://localhost:8080/demo/<whatever in your project>
+
+How to generate maven multi projects
+====================================
+
+This comes from here: https://stackoverflow.com/questions/6328778/how-to-create-an-empty-multi-module-maven-project#17981350
+
+- Create the top-level root:
+
+      mvn archetype:generate \
+      -DarchetypeGroupId=org.codehaus.mojo.archetypes \
+      -DarchetypeArtifactId=pom-root \
+      -DarchetypeVersion=RELEASE
+    
+- cd into your newly created root dir.
+
+- For each module:
+
+      mvn archetype:generate \
+      -DarchetypeGroupId=org.apache.maven.archetypes \
+      -DarchetypeArtifactId=maven-archetype-quickstart \
+      -DarchetypeVersion=RELEASE
